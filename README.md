@@ -9,6 +9,10 @@ To Run:
 
 Create a virtualenv called myvenv and launch it (see Note below).
 
+source virtualenvwrapper.sh
+
+mkvirtualenv myvenv --python=/usr/bin/python3.5
+
 (myvenv) $ pip install -r requirements.txt
 
 (myvenv) $ python miange.py migrate
