@@ -15,11 +15,11 @@ mkvirtualenv myvenv --python=/usr/bin/python3.5
 
 (myvenv) $ pip install -r requirements.txt
 
-(myvenv) $ python miange.py migrate
+(myvenv) $ python manage.py migrate
 
-(myvenv) $ python miange.py makemigrations
+(myvenv) $ python manage.py makemigrations
 
-(myvenv) $ python miange.py runserver
+(myvenv) $ python manage.py runserver
 
 Copy the IP address provided once your server has completed building the site. (It will say something like >> Serving at 127.0.0.1....), 
 then paste the IP address into the URL bar of a browser window and load it to view the site.
