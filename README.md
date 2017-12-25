@@ -1,31 +1,39 @@
-# pyGhana
-Website
+# [pyGhana](http://pythonghana.org/)
 
-This is the source code for the http://pythonghana.org/ website.
+    This is the source code for the http://pythonghana.org/ website.
 
-To run locally
+# Running the site locally
 
-To Run:
+## Requirments
 
-Create a virtualenv called myvenv and launch it (see Note below).
+* [Python 3.5](https://python.org)
+* [Django - python web framework](https://www.djangoproject.com/)
+* [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io)
 
-source virtualenvwrapper.sh
+## Installation
 
-mkvirtualenv myvenv --python=/usr/bin/python3.5
+* [Follow the guide here](https://help.github.com/articles/fork-a-repo) on how to clone or fork a repo
+* [Follow the guide here](http://simononsoftware.com/virtualenv-tutorial/) on how to create virtualenv
+* Create a virtualenv (example _myvenv_) and activate it (see Code below).
 
-(myvenv) $ pip install -r requirements.txt
+  ```
+  source virtualenvwrapper.sh
 
-(myvenv) $ python manage.py migrate
+  mkvirtualenv myvenv --python=/usr/bin/python3.5
 
-(myvenv) $ python manage.py makemigrations
+  (myvenv) $ pip install -r requirements.txt
 
-(myvenv) $ python manage.py runserver
+  (myvenv) $ python manage.py migrate
 
-Copy the IP address provided once your server has completed building the site. (It will say something like >> Serving at 127.0.0.1....), 
-then paste the IP address into the URL bar of a browser window and load it to view the site.
+  (myvenv) $ python manage.py makemigrations
 
-How to fork and clone: https://help.github.com/articles/fork-a-repo
+  (myvenv) $ python manage.py runserver
+  ```
 
-How to create a virtualenv: http://simononsoftware.com/virtualenv-tutorial/
+* Copy the IP address provided once your server has completed building the site. (It will say something like >> Serving at 127.0.0.1....).
+* Open the address in the browser
+* `Note`: It is important that when you create your virtualenv, do not create it in the same folder as the code you downloaded.
 
-Note: It is important that when you create your virtualenv, do not create it in the same folder as the code you downloaded. 
+# Contributing
+
+Read our [Contributing Guide](./CONTRIBUTING.md) on how to contribute to the project.
